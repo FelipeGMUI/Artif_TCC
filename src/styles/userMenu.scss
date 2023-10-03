@@ -1,0 +1,86 @@
+/* userMenu.scss */
+
+/* Estilos para o menu de usuário */
+.user-menu {
+  position: absolute;
+  right:30px;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #54abf2;
+  color: #FFF;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+}
+.user-menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.user-container, .user-name-container{
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  margin-left: 10px;
+  height: 100%;
+}
+ 
+
+
+.user-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+  
+}
+.user-menu-toggle{
+  border-left: 3px solid rgb(77, 52, 52);
+  background-color: rgb(69, 155, 212);
+  height:100%;
+  padding: 10px;
+}
+
+.user-menu-options {
+  display: block;
+  position: absolute;
+  top: 50px; /* Ajuste conforme necessário para o posicionamento vertical */
+  right: 0;
+  background: #f4f5f6;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border-radius: 4px;
+  width: 200px; /* Ajuste o tamanho do menu conforme necessário */
+  transition: opacity 0.8s; /* Adicione uma transição suave */
+}
+.user-menu-options ul {
+  list-style: none;
+  padding: 0;
+}
+.user-menu-options li {
+  padding: 10px 20px;
+ 
+}
+.user-menu-options a {
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+  display: block;
+  font-size: 16px;
+}
+
+.user-menu-options li:hover {
+  background: #93adc0;
+  transition: 0.8s;
+}
+

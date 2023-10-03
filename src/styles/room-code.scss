@@ -1,0 +1,52 @@
+.room-code{
+  height: 40px;
+  border-radius: 8px ;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: #fff;
+  border: 1px solid rgb(251, 97, 97);
+  cursor: pointer;
+  transition: 1.5s;
+  display: flex;
+
+
+  span{
+    display:block;
+    align-self: center;
+    flex: 1;
+    padding: 0 16px 0 12px;
+    width: 240px;
+    font-size: 14px;
+    font-weight: 500;
+   
+  }
+  .copy-icon{
+   display:block;
+   align-self: center;
+   width: 40px;
+   height:40px;
+   background-color: rgba(251, 54, 54, 0.444);   
+   transition: 1.5s; 
+
+
+
+   svg{
+    margin-top: 4px;
+    height: 60%;
+    width: 60%;
+   }
+  }
+  .copy-icon:hover{
+    background-color: #7c0909;
+    cursor: pointer;
+    
+  }
+
+ 
+}
+
+.room-code:hover{
+  background-color: rgba(240, 97, 72, 0.438);
+  transform: translateY(-5px)
+}

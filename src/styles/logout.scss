@@ -1,0 +1,40 @@
+/* Estilo base para o botão */
+.logout-button {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o avatar do usuário */
+  .user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para o nome do usuário */
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para o ícone de logout */
+  .logout-button-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Estilo de hover para o botão */
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  

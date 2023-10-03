@@ -1,0 +1,59 @@
+#page-room{
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .form-tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.file-upload{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  svg{
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 250ms;
+    color:rgb(100, 182, 182);
+    
+  }
+  svg:hover{
+    transform:translateY(-10px);
+    color: rgb(41, 69, 76);
+  }
+  span{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-top: 80px;
+  }
+}
+
+
+
+
+
