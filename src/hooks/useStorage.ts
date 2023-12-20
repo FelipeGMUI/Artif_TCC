@@ -1,5 +1,5 @@
 import { collection, doc, serverTimestamp, setDoc } from "firebase/firestore";
-import { getDownloadURL, getMetadata, ref, uploadBytesResumable } from "firebase/storage";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import  {database, storage}  from '../services/firebase';

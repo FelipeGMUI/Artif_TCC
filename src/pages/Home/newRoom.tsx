@@ -7,19 +7,21 @@ import { database } from '../../services/firebase';
 import { addDoc, collection } from 'firebase/firestore';
 import "firebase/firestore";
 import UserMenu from '../../components/userMenu';
+import artifIconImg from '../../assets/images/artif-icon.svg';
 
 export function NewRoom() {
   const navigate = useNavigate();
 
-  const { user, logout } = useAuth();
+  const { user, signInWithGoogle} = useAuth();
 
   const [newRoom, setNewRoom] = useState('');
 
   async function handleCreateRoom(event: FormEvent,) {
 
     event.preventDefault();
+ 
 
-    if (newRoom.trim() == '') {
+    if (newRoom.trim() === '') {
       return;
     }
     const refRoom = await addDoc(collection(database, 'rooms'),
@@ -37,6 +39,7 @@ export function NewRoom() {
         <p>Utilize esse espaço para mostrar suas ilustrações</p>
       </aside>
       <main >
+        <img src = {artifIconImg}/>
         <div className='main-content'>
           <h2>Criar uma nova sala</h2>
           <form onSubmit={handleCreateRoom} className='form-container'>
@@ -53,7 +56,6 @@ export function NewRoom() {
           <p>
             Deseja entrar em uma sala existente? <Link to='/' >Clique aqui</Link>
           </p>
-          <button onClick={logout}>Sair</button>
         </div>
       </main>
 

@@ -7,11 +7,9 @@ import { Button } from '../../components/button';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { database } from '../../services/firebase';
-import { getAuth } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import UserMenu from '../../components/userMenu';
-
-const auth = getAuth();
+import { getAuth } from 'firebase/auth';
 
 export function Home() {
 
@@ -22,16 +20,18 @@ export function Home() {
   async function handleCreateRoom() {
 
     if (!user) {
-      await signInWithGoogle();
+      await signInWithGoogle(); 
     }
-
     navigate("/room/new");
+    
+
+    
 
   }
   async function handleJoinRoom(event: FormEvent) {
 
     event.preventDefault();
-    if (roomCode.trim() == '') {
+    if (roomCode.trim() === '') {
 
       return;
 
